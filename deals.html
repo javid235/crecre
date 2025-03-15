@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - Ethiopian Airlines</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-plane"></i>
+            <span>Ethiopian Airlines</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="deals.html" class="active">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-auth">
+            <button class="btn-secondary">Sign In</button>
+            <button class="btn-primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px; padding: 2rem 5%;">
+        <section class="promo-banner" style="border-radius: 1rem; margin-bottom: 4rem;">
+            <div class="promo-content">
+                <h2>Special Summer Deals</h2>
+                <p>Book now and save up to 30% on selected international flights!</p>
+                <button class="btn-primary">Explore Deals</button>
+            </div>
+        </section>
+
+        <section class="deals-grid">
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div style="position: relative;">
+                        <img src="https://source.unsplash.com/800x600/?dubai" alt="Dubai">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--primary-color); color: var(--white); padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 600;">Save 25%</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Dubai Special</h3>
+                        <p style="text-decoration: line-through; color: #666;">$399</p>
+                        <p style="font-size: 1.5rem; margin: 0.5rem 0;">$299</p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Valid until July 31, 2024</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div style="position: relative;">
+                        <img src="https://source.unsplash.com/800x600/?london" alt="London">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--primary-color); color: var(--white); padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 600;">Save 30%</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>London Explorer</h3>
+                        <p style="text-decoration: line-through; color: #666;">$799</p>
+                        <p style="font-size: 1.5rem; margin: 0.5rem 0;">$559</p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Valid until August 15, 2024</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div style="position: relative;">
+                        <img src="https://source.unsplash.com/800x600/?nairobi" alt="Nairobi">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--primary-color); color: var(--white); padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 600;">Save 20%</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Nairobi Gateway</h3>
+                        <p style="text-decoration: line-through; color: #666;">$249</p>
+                        <p style="font-size: 1.5rem; margin: 0.5rem 0;">$199</p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Valid until June 30, 2024</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem; text-align: center;">
+            <h2 style="margin-bottom: 2rem;">Why Book with Us?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fas fa-tag" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We match any competitor's price for the same route</p>
+                </div>
+                <div style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fas fa-clock" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Flexible Booking</h3>
+                    <p>Change your flight dates without penalty fees</p>
+                </div>
+                <div style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fas fa-gift" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Loyalty Rewards</h3>
+                    <p>Earn miles with every booking</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Ethiopian Airlines - The New Spirit of Africa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ethiopian Airlines. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

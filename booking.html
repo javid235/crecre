@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking - SkyWay</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-plane-departure"></i>
+            <span>SkyWay</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Flights</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-auth">
+            <button class="btn-secondary">Sign In</button>
+            <button class="btn-primary">Register</button>
+        </div>
+    </nav>
+
+    <main class="booking-container">
+        <div class="booking-progress">
+            <div class="progress-step active">
+                <i class="fas fa-user"></i>
+                <span>Passenger Details</span>
+            </div>
+            <div class="progress-step">
+                <i class="fas fa-chair"></i>
+                <span>Seat Selection</span>
+            </div>
+            <div class="progress-step">
+                <i class="fas fa-credit-card"></i>
+                <span>Payment</span>
+            </div>
+        </div>
+
+        <div class="booking-sections">
+            <section id="passenger-details" class="booking-section active">
+                <h2>Passenger Details</h2>
+                <div class="flight-summary">
+                    <!-- Flight details will be inserted here -->
+                </div>
+                <form id="passenger-form">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <select name="title" required>
+                            <option value="">Select Title</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" name="phone" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Continue to Seat Selection</button>
+                </form>
+            </section>
+
+            <section id="seat-selection" class="booking-section">
+                <h2>Choose Your Seat</h2>
+                <div class="seat-map-container">
+                    <div class="seat-map-legend">
+                        <div class="legend-item">
+                            <div class="seat available"></div>
+                            <span>Available</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="seat selected"></div>
+                            <span>Selected</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="seat occupied"></div>
+                            <span>Occupied</span>
+                        </div>
+                    </div>
+                    <div class="seat-map">
+                        <!-- Seat map will be generated here -->
+                    </div>
+                </div>
+                <div class="seat-selection-summary">
+                    <p>Selected Seat: <span id="selected-seat">None</span></p>
+                    <button id="confirm-seat" class="btn-primary" disabled>Continue to Payment</button>
+                </div>
+            </section>
+
+            <section id="payment" class="booking-section">
+                <h2>Payment Details</h2>
+                <div class="booking-summary">
+                    <!-- Booking summary will be inserted here -->
+                </div>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" pattern="[0-9]{16}" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" pattern="[0-9]{2}/[0-9]{2}" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" pattern="[0-9]{3}" placeholder="123" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Name on Card</label>
+                        <input type="text" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Confirm Booking</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SkyWay</h3>
+                <p>Your trusted partner for hassle-free flight bookings worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@skyway.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 SkyWay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

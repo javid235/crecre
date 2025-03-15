@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - Ethiopian Airlines</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-plane"></i>
+            <span>Ethiopian Airlines</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flights.html" class="active">Flights</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-auth">
+            <button class="btn-secondary">Sign In</button>
+            <button class="btn-primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px; padding: 2rem 5%;">
+        <section class="popular-routes">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Popular Routes</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/800x600/?addis-ababa" alt="Addis Ababa">
+                    <div class="destination-info">
+                        <h3>Addis Ababa - Dubai</h3>
+                        <p>From $299</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/800x600/?london" alt="London">
+                    <div class="destination-info">
+                        <h3>Addis Ababa - London</h3>
+                        <p>From $599</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/800x600/?nairobi" alt="Nairobi">
+                    <div class="destination-info">
+                        <h3>Addis Ababa - Nairobi</h3>
+                        <p>From $199</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flight-schedule" style="margin-top: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Flight Schedule</h2>
+            <div style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid var(--light-gray);">
+                            <th style="padding: 1rem; text-align: left;">Flight No.</th>
+                            <th style="padding: 1rem;">From</th>
+                            <th style="padding: 1rem;">To</th>
+                            <th style="padding: 1rem;">Departure</th>
+                            <th style="padding: 1rem;">Arrival</th>
+                            <th style="padding: 1rem;">Price</th>
+                            <th style="padding: 1rem;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--light-gray);">
+                            <td style="padding: 1rem;">ET 602</td>
+                            <td style="padding: 1rem; text-align: center;">ADD</td>
+                            <td style="padding: 1rem; text-align: center;">DXB</td>
+                            <td style="padding: 1rem; text-align: center;">09:00</td>
+                            <td style="padding: 1rem; text-align: center;">14:30</td>
+                            <td style="padding: 1rem; text-align: center;">$299</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <button class="btn-primary" style="padding: 0.5rem 1rem;">Book</button>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light-gray);">
+                            <td style="padding: 1rem;">ET 700</td>
+                            <td style="padding: 1rem; text-align: center;">ADD</td>
+                            <td style="padding: 1rem; text-align: center;">LHR</td>
+                            <td style="padding: 1rem; text-align: center;">23:00</td>
+                            <td style="padding: 1rem; text-align: center;">06:30</td>
+                            <td style="padding: 1rem; text-align: center;">$599</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <button class="btn-primary" style="padding: 0.5rem 1rem;">Book</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;">ET 801</td>
+                            <td style="padding: 1rem; text-align: center;">ADD</td>
+                            <td style="padding: 1rem; text-align: center;">NBO</td>
+                            <td style="padding: 1rem; text-align: center;">10:30</td>
+                            <td style="padding: 1rem; text-align: center;">12:30</td>
+                            <td style="padding: 1rem; text-align: center;">$199</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <button class="btn-primary" style="padding: 0.5rem 1rem;">Book</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Ethiopian Airlines - The New Spirit of Africa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ethiopian Airlines. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
